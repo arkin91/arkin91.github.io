@@ -2,23 +2,13 @@ import Hero from "@/components/Hero";
 import ContentSection from "@/components/ContentSection";
 import ChatbotWidget from "@/components/ChatbotWidget";
 import { User, Target, Route, Briefcase, Rocket } from "lucide-react";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
-      <Hero
-        name="Your Name"
-        title="MBA Candidate | Aspiring Product Manager"
-        summary="Passionate about building products that solve real problems. Currently pursuing my MBA and seeking PM internship opportunities to drive impact at scale."
-      />
+      <Hero name="Your Name" title="MBA Candidate | Aspiring Product Manager" summary="Passionate about building products that solve real problems. Currently pursuing my MBA and seeking PM internship opportunities to drive impact at scale." />
 
       {/* Who am I? */}
-      <ContentSection 
-        id="who-am-i" 
-        title="Who am I?"
-        icon={<User className="w-6 h-6" />}
-      >
+      <ContentSection id="who-am-i" title="Who am I?" icon={<User className="w-6 h-6" />}>
         <p className="mb-4">
           I'm a driven individual with a passion for technology and business strategy. 
           My background spans [your previous industry/experience], where I developed a 
@@ -32,12 +22,7 @@ const Index = () => {
       </ContentSection>
 
       {/* What is my goal? */}
-      <ContentSection 
-        id="goal" 
-        title="What is my goal?"
-        icon={<Target className="w-6 h-6" />}
-        alternate
-      >
+      <ContentSection id="goal" title="What is my goal?" icon={<Target className="w-6 h-6" />} alternate>
         <p className="mb-4">
           My immediate goal is to secure a PM internship where I can apply my 
           analytical skills and business acumen to real product challenges. I'm 
@@ -52,11 +37,7 @@ const Index = () => {
       </ContentSection>
 
       {/* What has my journey been like? */}
-      <ContentSection 
-        id="journey" 
-        title="What has my journey been like?"
-        icon={<Route className="w-6 h-6" />}
-      >
+      <ContentSection id="journey" title="What has my journey been like?" icon={<Route className="w-6 h-6" />}>
         <div className="space-y-6">
           <div className="border-l-2 border-primary pl-6">
             <h4 className="font-semibold text-foreground mb-1">Current: MBA Program</h4>
@@ -77,12 +58,7 @@ const Index = () => {
       </ContentSection>
 
       {/* What do I bring to the table? */}
-      <ContentSection 
-        id="skills" 
-        title="What do I bring to the table?"
-        icon={<Briefcase className="w-6 h-6" />}
-        alternate
-      >
+      <ContentSection id="skills" title="What do I bring to the table?" icon={<Briefcase className="w-6 h-6" />} alternate>
         <div className="grid md:grid-cols-2 gap-6">
           <div>
             <h4 className="font-semibold text-foreground mb-3">Technical Skills</h4>
@@ -122,11 +98,7 @@ const Index = () => {
       </ContentSection>
 
       {/* What am I working on these days? */}
-      <ContentSection 
-        id="current" 
-        title="What am I working on these days?"
-        icon={<Rocket className="w-6 h-6" />}
-      >
+      <ContentSection id="current" title="What am I working on these days?" icon={<Rocket className="w-6 h-6" />}>
         <div className="space-y-4">
           <div className="p-4 bg-secondary rounded-lg">
             <h4 className="font-semibold text-foreground mb-2">🎯 PM Interview Prep</h4>
@@ -148,29 +120,19 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-white/80 mb-4">Let's connect and explore opportunities together.</p>
           <div className="flex justify-center gap-6">
-            <a 
-              href="https://linkedin.com/in/yourprofile" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-primary hover:text-primary/80 font-medium transition-colors"
-            >
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 font-medium transition-colors">
               LinkedIn
             </a>
-            <a 
-              href="mailto:your.email@example.com"
-              className="text-primary hover:text-primary/80 font-medium transition-colors"
-            >
+            <a href="mailto:your.email@example.com" className="text-primary hover:text-primary/80 font-medium transition-colors">
               Email
             </a>
           </div>
-          <p className="text-white/40 text-sm mt-8">© 2025 Your Name. All rights reserved.</p>
+          <p className="text-white/40 text-sm mt-8">© 2026 Arkin Sanghi. All rights reserved.</p>
         </div>
       </footer>
 
       {/* Chatbot Widget */}
       <ChatbotWidget />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
