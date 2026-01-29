@@ -5,9 +5,10 @@ interface HeroProps {
   title: string;
   summary: string;
   imageUrl?: string;
+  isPersonalMode?: boolean;
 }
 
-const Hero = ({ name, title, summary, imageUrl }: HeroProps) => {
+const Hero = ({ name, title, summary, imageUrl, isPersonalMode = false }: HeroProps) => {
   return (
     <section className="hero-bg min-h-[70vh] flex items-center justify-center px-6 py-20">
       <div className="max-w-4xl mx-auto text-center">

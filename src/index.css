@@ -95,6 +95,45 @@
     --sidebar-border: 0 0% 15%;
     --sidebar-ring: 0 72% 55%;
   }
+
+  /* Personal Mode - Relaxed beige, sky blue, white theme */
+  .personal-mode {
+    --background: 45 30% 96%;
+    --foreground: 45 10% 15%;
+
+    --card: 45 40% 98%;
+    --card-foreground: 45 10% 15%;
+
+    --popover: 45 40% 98%;
+    --popover-foreground: 45 10% 15%;
+
+    /* Sky blue accent */
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Warm beige backgrounds */
+    --secondary: 45 30% 92%;
+    --secondary-foreground: 45 10% 20%;
+
+    --muted: 45 20% 88%;
+    --muted-foreground: 45 10% 40%;
+
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 45 20% 85%;
+    --input: 45 20% 85%;
+    --ring: 199 89% 48%;
+
+    /* Personal mode hero gradient - warm sunset/beach vibes */
+    --hero-gradient: linear-gradient(135deg, hsl(199 50% 35%) 0%, hsl(199 60% 50%) 50%, hsl(45 40% 70%) 100%);
+    --card-shadow: 0 4px 20px -4px hsl(45 30% 50% / 0.15);
+    --card-shadow-hover: 0 12px 40px -8px hsl(45 30% 50% / 0.25);
+    --text-gradient: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(199 89% 35%) 100%);
+  }
 }
 
 @layer base {
