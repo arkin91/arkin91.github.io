@@ -5,7 +5,7 @@ import { User, Target, Route, Briefcase, Rocket } from "lucide-react";
 const Index = () => {
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <Hero name="Your Name" title="MBA Candidate | Aspiring Product Manager" summary="Passionate about building products that solve real problems. Currently pursuing my MBA and seeking PM internship opportunities to drive impact at scale." />
+      <Hero name="Arkin Sanghi" title="MBA Candidate | Aspiring Product Manager" summary="Passionate about building products that solve real problems. Currently pursuing my MBA and seeking PM internship opportunities to drive impact at scale." />
 
       {/* Who am I? */}
       <ContentSection id="who-am-i" title="Who am I?" icon={<User className="w-6 h-6" />}>
