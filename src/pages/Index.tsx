@@ -161,58 +161,68 @@ const Index = () => {
     ),
     journey: (
       <div className="space-y-6">
-        <div className="border-l-2 border-primary pl-6">
-          <h4 className="font-semibold text-foreground mb-1">🎿 Mountain Adventure</h4>
-          <p className="text-sm text-muted-foreground mb-2">Recent</p>
-          <p>Conquered my fear of heights with an exhilarating skiing trip in the Alps—crashed spectacularly, got back up, and loved every minute.</p>
+        <div className="flex gap-4 border-l-2 border-primary pl-6">
+          <div className="w-20 h-20 rounded-lg bg-muted flex-shrink-0" />
+          <div>
+            <h4 className="font-semibold text-foreground mb-1">🎿 Mountain Adventure</h4>
+            <p className="text-sm text-muted-foreground mb-2">Recent</p>
+            <p>Conquered my fear of heights with an exhilarating skiing trip in the Alps—crashed spectacularly, got back up, and loved every minute.</p>
+          </div>
         </div>
-        <div className="border-l-2 border-border pl-6">
-          <h4 className="font-semibold text-foreground mb-1">🍜 Culinary Experiment</h4>
-          <p className="text-sm text-muted-foreground mb-2">Last Month</p>
-          <p>Successfully made hand-pulled noodles from scratch after watching about 50 YouTube tutorials and destroying my kitchen twice.</p>
+        <div className="flex gap-4 border-l-2 border-border pl-6">
+          <div className="w-20 h-20 rounded-lg bg-muted flex-shrink-0" />
+          <div>
+            <h4 className="font-semibold text-foreground mb-1">🍜 Culinary Experiment</h4>
+            <p className="text-sm text-muted-foreground mb-2">Last Month</p>
+            <p>Successfully made hand-pulled noodles from scratch after watching about 50 YouTube tutorials and destroying my kitchen twice.</p>
+          </div>
         </div>
-        <div className="border-l-2 border-border pl-6">
-          <h4 className="font-semibold text-foreground mb-1">📖 Reading Marathon</h4>
-          <p className="text-sm text-muted-foreground mb-2">Ongoing</p>
-          <p>Finished the entire Cosmere series by Brandon Sanderson—that's over 4 million words of interconnected epic fantasy!</p>
+        <div className="flex gap-4 border-l-2 border-border pl-6">
+          <div className="w-20 h-20 rounded-lg bg-muted flex-shrink-0" />
+          <div>
+            <h4 className="font-semibold text-foreground mb-1">📖 Reading Marathon</h4>
+            <p className="text-sm text-muted-foreground mb-2">Ongoing</p>
+            <p>Finished the entire Cosmere series by Brandon Sanderson—that's over 4 million words of interconnected epic fantasy!</p>
+          </div>
         </div>
       </div>
     ),
     skills: (
       <div className="space-y-6">
         <h4 className="font-semibold text-foreground mb-3">🍳 Dishes I've Mastered</h4>
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="p-4 bg-secondary rounded-lg">
-            <h5 className="font-medium text-foreground mb-2">Italian Favorites</h5>
-            <ul className="space-y-1 text-sm">
-              <li>• Homemade fresh pasta (fettuccine & ravioli)</li>
-              <li>• Risotto alla Milanese</li>
-              <li>• Tiramisu from scratch</li>
-            </ul>
+        <div className="grid md:grid-cols-3 gap-4">
+          <div className="flex gap-4 p-4 bg-secondary rounded-lg">
+            <div className="w-20 h-20 rounded-lg bg-muted flex-shrink-0" />
+            <div>
+              <h5 className="font-medium text-foreground mb-2">Italian Favorites</h5>
+              <ul className="space-y-1 text-sm">
+                <li>• Homemade fresh pasta</li>
+                <li>• Risotto alla Milanese</li>
+                <li>• Tiramisu from scratch</li>
+              </ul>
+            </div>
           </div>
-          <div className="p-4 bg-secondary rounded-lg">
-            <h5 className="font-medium text-foreground mb-2">Indian Classics</h5>
-            <ul className="space-y-1 text-sm">
-              <li>• Butter chicken with homemade naan</li>
-              <li>• Biryani (the layered kind!)</li>
-              <li>• Masala dosa with sambar</li>
-            </ul>
+          <div className="flex gap-4 p-4 bg-secondary rounded-lg">
+            <div className="w-20 h-20 rounded-lg bg-muted flex-shrink-0" />
+            <div>
+              <h5 className="font-medium text-foreground mb-2">Indian Classics</h5>
+              <ul className="space-y-1 text-sm">
+                <li>• Butter chicken with naan</li>
+                <li>• Biryani (the layered kind!)</li>
+                <li>• Masala dosa with sambar</li>
+              </ul>
+            </div>
           </div>
-          <div className="p-4 bg-secondary rounded-lg">
-            <h5 className="font-medium text-foreground mb-2">Asian Adventures</h5>
-            <ul className="space-y-1 text-sm">
-              <li>• Pad Thai</li>
-              <li>• Japanese curry</li>
-              <li>• Hand-pulled noodles (work in progress)</li>
-            </ul>
-          </div>
-          <div className="p-4 bg-secondary rounded-lg">
-            <h5 className="font-medium text-foreground mb-2">Baking & Desserts</h5>
-            <ul className="space-y-1 text-sm">
-              <li>• Sourdough bread</li>
-              <li>• Chocolate lava cake</li>
-              <li>• Croissants (attempt #3 was edible!)</li>
-            </ul>
+          <div className="flex gap-4 p-4 bg-secondary rounded-lg">
+            <div className="w-20 h-20 rounded-lg bg-muted flex-shrink-0" />
+            <div>
+              <h5 className="font-medium text-foreground mb-2">Asian Adventures</h5>
+              <ul className="space-y-1 text-sm">
+                <li>• Pad Thai</li>
+                <li>• Japanese curry</li>
+                <li>• Hand-pulled noodles</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
