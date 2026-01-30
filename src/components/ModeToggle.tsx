@@ -13,26 +13,26 @@ const ModeToggle = ({ isPersonalMode, onToggle }: ModeToggleProps) => {
     >
       <div className="relative flex items-center">
         {/* Icons container */}
-        <div className="w-10 h-10 flex items-center justify-center z-10">
-          <Briefcase className="w-5 h-5 text-muted-foreground" />
+        <div className="w-12 h-10 flex items-center justify-center z-10">
+          <Briefcase className="w-5 h-5 text-foreground/70" />
         </div>
-        <div className="w-10 h-10 flex items-center justify-center z-10">
-          <Palmtree className="w-5 h-5 text-muted-foreground" />
+        <div className="w-12 h-10 flex items-center justify-center z-10">
+          <Palmtree className="w-5 h-5 text-foreground/70" />
         </div>
         
         {/* Sliding circle */}
         <div 
           className={`absolute w-10 h-10 bg-primary rounded-full transition-all duration-300 ease-in-out ${
-            isPersonalMode ? 'left-10' : 'left-0'
+            isPersonalMode ? 'left-13' : 'left-1'
           }`}
         />
         
         {/* Icons overlay for active state */}
         <div className="absolute inset-0 flex items-center pointer-events-none">
-          <div className="w-10 h-10 flex items-center justify-center">
+          <div className="w-12 h-10 flex items-center justify-center">
             <Briefcase className={`w-5 h-5 transition-colors duration-300 ${!isPersonalMode ? 'text-primary-foreground' : 'text-transparent'}`} />
           </div>
-          <div className="w-10 h-10 flex items-center justify-center">
+          <div className="w-12 h-10 flex items-center justify-center">
             <Palmtree className={`w-5 h-5 transition-colors duration-300 ${isPersonalMode ? 'text-primary-foreground' : 'text-transparent'}`} />
           </div>
         </div>
