@@ -42,7 +42,7 @@ const Hero = ({
 
         {/* Scroll indicator */}
         <div className="mt-16 animate-fade-up opacity-0 stagger-4">
-          <div className="w-6 h-10 border-2 rounded-full mx-auto flex justify-center text-slate-500 border-slate-400 bg-slate-400">
+          <div className="w-6 h-10 border-2 rounded-full mx-auto flex justify-center text-slate-500 bg-slate-400 border-slate-500">
             <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-bounce" />
           </div>
         </div>
