@@ -20,10 +20,10 @@ const ModeToggle = ({ isPersonalMode, onToggle }: ModeToggleProps) => {
           <Palmtree className="w-5 h-5 text-muted-foreground" />
         </div>
         
-        {/* Sliding circle */}
+        {/* Sliding circle with roll animation */}
         <div 
           className={`absolute w-10 h-10 bg-primary rounded-full transition-all duration-300 ease-in-out ${
-            isPersonalMode ? 'left-10' : 'left-0'
+            isPersonalMode ? 'left-10 rotate-[360deg]' : 'left-0 rotate-0'
           }`}
         />
         
