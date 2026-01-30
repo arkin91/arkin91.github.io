@@ -3,7 +3,7 @@ import ContentSection from "@/components/ContentSection";
 import ChatbotWidget from "@/components/ChatbotWidget";
 import ModeToggle from "@/components/ModeToggle";
 import { usePersonalMode } from "@/hooks/usePersonalMode";
-import { User, Target, Route, Briefcase, Rocket, Mountain, UtensilsCrossed, Coffee } from "lucide-react";
+import { User, Target, Route, Briefcase, Rocket, Plane, UtensilsCrossed, Coffee } from "lucide-react";
 const Index = () => {
   const {
     isPersonalMode,
@@ -230,7 +230,7 @@ const Index = () => {
       </ContentSection>
 
       {/* What has my journey been like? */}
-      <ContentSection id="journey" title="What has my journey been like?" icon={isPersonalMode ? <Mountain className="w-6 h-6" /> : <Route className="w-6 h-6" />}>
+      <ContentSection id="journey" title="What has my journey been like?" icon={isPersonalMode ? <Plane className="w-6 h-6" /> : <Route className="w-6 h-6" />}>
         {content.journey}
       </ContentSection>
 
