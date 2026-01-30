@@ -4,18 +4,19 @@ import ChatbotWidget from "@/components/ChatbotWidget";
 import ModeToggle from "@/components/ModeToggle";
 import { usePersonalMode } from "@/hooks/usePersonalMode";
 import { User, Target, Route, Briefcase, Rocket } from "lucide-react";
-
 const Index = () => {
-  const { isPersonalMode, setIsPersonalMode } = usePersonalMode();
+  const {
+    isPersonalMode,
+    setIsPersonalMode
+  } = usePersonalMode();
 
   // Professional content
   const professionalContent = {
     hero: {
       title: "MBA Candidate | Aspiring Product Manager",
-      summary: "Passionate about building products that solve real problems. Currently pursuing my MBA and seeking PM internship opportunities to drive impact at scale.",
+      summary: "Passionate about building products that solve real problems. Currently pursuing my MBA and seeking PM internship opportunities to drive impact at scale."
     },
-    whoAmI: (
-      <>
+    whoAmI: <>
         <p className="mb-4">
           I'm a driven individual with a passion for technology and business strategy. 
           My background spans [your previous industry/experience], where I developed a 
@@ -26,10 +27,8 @@ const Index = () => {
           constantly learning. I believe the best products come from diverse perspectives 
           and genuine empathy for users.
         </p>
-      </>
-    ),
-    goal: (
-      <>
+      </>,
+    goal: <>
         <p className="mb-4">
           My immediate goal is to secure a PM internship where I can apply my 
           analytical skills and business acumen to real product challenges. I'm 
@@ -41,10 +40,8 @@ const Index = () => {
           that's improving financial inclusion, advancing healthcare accessibility, or 
           reimagining how people work and collaborate.
         </p>
-      </>
-    ),
-    journey: (
-      <div className="space-y-6">
+      </>,
+    journey: <div className="space-y-6">
         <div className="border-l-2 border-primary pl-6">
           <h4 className="font-semibold text-foreground mb-1">Current: MBA Program</h4>
           <p className="text-sm text-muted-foreground mb-2">[Your School Name] • 2024 - Present</p>
@@ -60,10 +57,8 @@ const Index = () => {
           <p className="text-sm text-muted-foreground mb-2">[Company/School Name] • [Years]</p>
           <p>Foundation experiences that shaped your interest in product management.</p>
         </div>
-      </div>
-    ),
-    skills: (
-      <div className="grid md:grid-cols-2 gap-6">
+      </div>,
+    skills: <div className="grid md:grid-cols-2 gap-6">
         <div>
           <h4 className="font-semibold text-foreground mb-3">Technical Skills</h4>
           <ul className="space-y-2">
@@ -98,10 +93,8 @@ const Index = () => {
             </li>
           </ul>
         </div>
-      </div>
-    ),
-    current: (
-      <div className="space-y-4">
+      </div>,
+    current: <div className="space-y-4">
         <div className="p-4 bg-secondary rounded-lg">
           <h4 className="font-semibold text-foreground mb-2">🎯 PM Interview Prep</h4>
           <p>Sharpening my product sense through case studies and mock interviews.</p>
@@ -115,17 +108,15 @@ const Index = () => {
           <p>Building [your side project] to explore [technology/problem space].</p>
         </div>
       </div>
-    ),
   };
 
   // Personal content
   const personalContent = {
     hero: {
       title: "Fantasy Fiction Fanatic | Aspiring Cook & Traveller",
-      summary: "When I'm not in MBA mode, you'll find me lost in epic fantasy worlds, experimenting with recipes in the kitchen, or planning my next adventure to far-flung destinations.",
+      summary: "When I'm not in MBA mode, you'll find me lost in epic fantasy worlds, experimenting with recipes in the kitchen, or planning my next adventure to far-flung destinations."
     },
-    whoAmI: (
-      <>
+    whoAmI: <>
         <p className="mb-4">
           I'm a passionate reader who devours fantasy fiction—from sprawling epic sagas to 
           intricate magic systems. There's something magical about escaping into worlds where 
@@ -141,10 +132,8 @@ const Index = () => {
           that push me out of my comfort zone. My bucket list is long, and I'm slowly but surely 
           checking items off!
         </p>
-      </>
-    ),
-    goal: (
-      <div className="space-y-4">
+      </>,
+    goal: <div className="space-y-4">
         <div className="p-4 bg-secondary rounded-lg">
           <h4 className="font-semibold text-foreground mb-2">🍕 Culinary Quest</h4>
           <p>Master the art of making a truly authentic Neapolitan pizza—leopard-spotted crust, San Marzano tomatoes, fresh mozzarella, and all.</p>
@@ -157,10 +146,8 @@ const Index = () => {
           <h4 className="font-semibold text-foreground mb-2">✍️ Creative Ambition</h4>
           <p>Write my own fantasy fiction series—a story that's been brewing in my imagination for years, waiting to be told.</p>
         </div>
-      </div>
-    ),
-    journey: (
-      <div className="space-y-6">
+      </div>,
+    journey: <div className="space-y-6">
         <div className="flex gap-4 border-l-2 border-primary pl-6">
           <div className="w-24 aspect-square rounded-lg bg-muted flex-shrink-0" />
           <div className="flex flex-col justify-center">
@@ -185,10 +172,8 @@ const Index = () => {
             <p>Finished the entire Cosmere series by Brandon Sanderson—that's over 4 million words of interconnected epic fantasy!</p>
           </div>
         </div>
-      </div>
-    ),
-    skills: (
-      <div className="grid md:grid-cols-3 gap-6">
+      </div>,
+    skills: <div className="grid md:grid-cols-3 gap-6">
         <div className="relative group aspect-square rounded-xl overflow-hidden bg-muted cursor-pointer">
           <div className="absolute inset-0 bg-muted" />
           <div className="absolute inset-0 bg-foreground/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
@@ -210,10 +195,8 @@ const Index = () => {
             <p className="text-background/90 text-sm">Wok-tossed wonders and noodle perfection 🍜</p>
           </div>
         </div>
-      </div>
-    ),
-    current: (
-      <div className="space-y-4">
+      </div>,
+    current: <div className="space-y-4">
         <div className="p-4 bg-secondary rounded-lg">
           <h4 className="font-semibold text-foreground mb-2">📚 Currently Reading</h4>
           <p>Deep into "The Stormlight Archive" by Brandon Sanderson—Book 4: Rhythm of War. The magic system is absolutely mind-blowing!</p>
@@ -227,23 +210,14 @@ const Index = () => {
           <p>Training to do 10 pull-ups in one go—currently at 6, so we're getting there! Three sets of pull-ups every other day is the plan.</p>
         </div>
       </div>
-    ),
   };
-
   const content = isPersonalMode ? personalContent : professionalContent;
-
-  return (
-    <div className="min-h-screen transition-colors duration-500">
+  return <div className="min-h-screen transition-colors duration-500">
       {/* Mode Toggle */}
       <ModeToggle isPersonalMode={isPersonalMode} onToggle={setIsPersonalMode} />
 
       {/* Hero Section */}
-      <Hero 
-        name="Arkin Sanghi" 
-        title={content.hero.title} 
-        summary={content.hero.summary}
-        isPersonalMode={isPersonalMode}
-      />
+      <Hero name="Arkin Sanghi" title={content.hero.title} summary={content.hero.summary} isPersonalMode={isPersonalMode} />
 
       {/* Who am I? */}
       <ContentSection id="who-am-i" title="Who am I?" icon={<User className="w-6 h-6" />}>
@@ -273,7 +247,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="hero-bg py-12 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-white/80 mb-4">Let's connect and explore opportunities together.</p>
+          <p className="mb-4 text-slate-400">Let's connect and explore opportunities together.</p>
           <div className="flex justify-center gap-6">
             <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 font-medium transition-colors">
               LinkedIn
@@ -282,14 +256,12 @@ const Index = () => {
               Email
             </a>
           </div>
-          <p className="text-white/40 text-sm mt-8">© 2026 Arkin Sanghi. All rights reserved.</p>
+          <p className="text-sm mt-8 text-slate-400">© 2026 Arkin Sanghi. All rights reserved.</p>
         </div>
       </footer>
 
       {/* Chatbot Widget */}
       <ChatbotWidget />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;

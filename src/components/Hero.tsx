@@ -1,5 +1,4 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
 interface HeroProps {
   name: string;
   title: string;
@@ -7,10 +6,14 @@ interface HeroProps {
   imageUrl?: string;
   isPersonalMode?: boolean;
 }
-
-const Hero = ({ name, title, summary, imageUrl, isPersonalMode = false }: HeroProps) => {
-  return (
-    <section className="hero-bg min-h-[70vh] flex items-center justify-center px-6 py-20">
+const Hero = ({
+  name,
+  title,
+  summary,
+  imageUrl,
+  isPersonalMode = false
+}: HeroProps) => {
+  return <section className="hero-bg min-h-[70vh] flex items-center justify-center px-6 py-20">
       <div className="max-w-4xl mx-auto text-center">
         {/* Profile Image */}
         <div className="mb-8 animate-fade-up opacity-0">
@@ -33,19 +36,17 @@ const Hero = ({ name, title, summary, imageUrl, isPersonalMode = false }: HeroPr
         </p>
 
         {/* Summary */}
-        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed animate-fade-up opacity-0 stagger-3">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed animate-fade-up opacity-0 stagger-3 text-slate-500">
           {summary}
         </p>
 
         {/* Scroll indicator */}
         <div className="mt-16 animate-fade-up opacity-0 stagger-4">
-          <div className="w-6 h-10 border-2 border-white/40 rounded-full mx-auto flex justify-center">
+          <div className="w-6 h-10 border-2 rounded-full mx-auto flex justify-center bg-input text-slate-500 border-slate-400">
             <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-bounce" />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
