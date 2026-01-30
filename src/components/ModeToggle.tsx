@@ -14,10 +14,10 @@ const ModeToggle = ({ isPersonalMode, onToggle }: ModeToggleProps) => {
       <div className="relative flex items-center">
         {/* Icons container */}
         <div className="w-10 h-10 flex items-center justify-center z-10">
-          <Briefcase className="w-5 h-5 text-muted-foreground" />
+          <Briefcase className="w-5 h-5 text-white" />
         </div>
         <div className="w-10 h-10 flex items-center justify-center z-10">
-          <Palmtree className="w-5 h-5 text-muted-foreground" />
+          <Palmtree className="w-5 h-5 text-white" />
         </div>
         
         {/* Sliding circle with roll animation */}
