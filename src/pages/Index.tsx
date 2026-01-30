@@ -162,24 +162,24 @@ const Index = () => {
     journey: (
       <div className="space-y-6">
         <div className="flex gap-4 border-l-2 border-primary pl-6">
-          <div className="w-20 h-20 rounded-lg bg-muted flex-shrink-0" />
-          <div>
+          <div className="w-24 aspect-square rounded-lg bg-muted flex-shrink-0" />
+          <div className="flex flex-col justify-center">
             <h4 className="font-semibold text-foreground mb-1">🎿 Mountain Adventure</h4>
             <p className="text-sm text-muted-foreground mb-2">Recent</p>
             <p>Conquered my fear of heights with an exhilarating skiing trip in the Alps—crashed spectacularly, got back up, and loved every minute.</p>
           </div>
         </div>
         <div className="flex gap-4 border-l-2 border-border pl-6">
-          <div className="w-20 h-20 rounded-lg bg-muted flex-shrink-0" />
-          <div>
+          <div className="w-24 aspect-square rounded-lg bg-muted flex-shrink-0" />
+          <div className="flex flex-col justify-center">
             <h4 className="font-semibold text-foreground mb-1">🍜 Culinary Experiment</h4>
             <p className="text-sm text-muted-foreground mb-2">Last Month</p>
             <p>Successfully made hand-pulled noodles from scratch after watching about 50 YouTube tutorials and destroying my kitchen twice.</p>
           </div>
         </div>
         <div className="flex gap-4 border-l-2 border-border pl-6">
-          <div className="w-20 h-20 rounded-lg bg-muted flex-shrink-0" />
-          <div>
+          <div className="w-24 aspect-square rounded-lg bg-muted flex-shrink-0" />
+          <div className="flex flex-col justify-center">
             <h4 className="font-semibold text-foreground mb-1">📖 Reading Marathon</h4>
             <p className="text-sm text-muted-foreground mb-2">Ongoing</p>
             <p>Finished the entire Cosmere series by Brandon Sanderson—that's over 4 million words of interconnected epic fantasy!</p>
@@ -188,41 +188,26 @@ const Index = () => {
       </div>
     ),
     skills: (
-      <div className="space-y-6">
-        <h4 className="font-semibold text-foreground mb-3">🍳 Dishes I've Mastered</h4>
-        <div className="grid md:grid-cols-3 gap-4">
-          <div className="flex gap-4 p-4 bg-secondary rounded-lg">
-            <div className="w-20 h-20 rounded-lg bg-muted flex-shrink-0" />
-            <div>
-              <h5 className="font-medium text-foreground mb-2">Italian Favorites</h5>
-              <ul className="space-y-1 text-sm">
-                <li>• Homemade fresh pasta</li>
-                <li>• Risotto alla Milanese</li>
-                <li>• Tiramisu from scratch</li>
-              </ul>
-            </div>
+      <div className="grid md:grid-cols-3 gap-6">
+        <div className="relative group aspect-square rounded-xl overflow-hidden bg-muted cursor-pointer">
+          <div className="absolute inset-0 bg-muted" />
+          <div className="absolute inset-0 bg-foreground/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+            <h5 className="font-semibold text-background text-lg mb-2">Italian Favorites</h5>
+            <p className="text-background/90 text-sm">From fresh pasta to creamy risotto—la dolce vita on a plate! 🍝</p>
           </div>
-          <div className="flex gap-4 p-4 bg-secondary rounded-lg">
-            <div className="w-20 h-20 rounded-lg bg-muted flex-shrink-0" />
-            <div>
-              <h5 className="font-medium text-foreground mb-2">Indian Classics</h5>
-              <ul className="space-y-1 text-sm">
-                <li>• Butter chicken with naan</li>
-                <li>• Biryani (the layered kind!)</li>
-                <li>• Masala dosa with sambar</li>
-              </ul>
-            </div>
+        </div>
+        <div className="relative group aspect-square rounded-xl overflow-hidden bg-muted cursor-pointer">
+          <div className="absolute inset-0 bg-muted" />
+          <div className="absolute inset-0 bg-foreground/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+            <h5 className="font-semibold text-background text-lg mb-2">Indian Classics</h5>
+            <p className="text-background/90 text-sm">Spice-infused comfort food that warms the soul 🍛</p>
           </div>
-          <div className="flex gap-4 p-4 bg-secondary rounded-lg">
-            <div className="w-20 h-20 rounded-lg bg-muted flex-shrink-0" />
-            <div>
-              <h5 className="font-medium text-foreground mb-2">Asian Adventures</h5>
-              <ul className="space-y-1 text-sm">
-                <li>• Pad Thai</li>
-                <li>• Japanese curry</li>
-                <li>• Hand-pulled noodles</li>
-              </ul>
-            </div>
+        </div>
+        <div className="relative group aspect-square rounded-xl overflow-hidden bg-muted cursor-pointer">
+          <div className="absolute inset-0 bg-muted" />
+          <div className="absolute inset-0 bg-foreground/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+            <h5 className="font-semibold text-background text-lg mb-2">Asian Adventures</h5>
+            <p className="text-background/90 text-sm">Wok-tossed wonders and noodle perfection 🍜</p>
           </div>
         </div>
       </div>
