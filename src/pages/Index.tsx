@@ -3,7 +3,7 @@ import ContentSection from "@/components/ContentSection";
 import ChatbotWidget from "@/components/ChatbotWidget";
 import ModeToggle from "@/components/ModeToggle";
 import { usePersonalMode } from "@/hooks/usePersonalMode";
-import { User, Target, Route, Briefcase, Rocket } from "lucide-react";
+import { User, Target, Route, Briefcase, Rocket, Mountain, UtensilsCrossed, Coffee } from "lucide-react";
 const Index = () => {
   const {
     isPersonalMode,
@@ -230,17 +230,17 @@ const Index = () => {
       </ContentSection>
 
       {/* What has my journey been like? */}
-      <ContentSection id="journey" title="What has my journey been like?" icon={<Route className="w-6 h-6" />}>
+      <ContentSection id="journey" title="What has my journey been like?" icon={isPersonalMode ? <Mountain className="w-6 h-6" /> : <Route className="w-6 h-6" />}>
         {content.journey}
       </ContentSection>
 
       {/* What do I bring to the table? */}
-      <ContentSection id="skills" title="What do I bring to the table?" icon={<Briefcase className="w-6 h-6" />} alternate>
+      <ContentSection id="skills" title="What do I bring to the table?" icon={isPersonalMode ? <UtensilsCrossed className="w-6 h-6" /> : <Briefcase className="w-6 h-6" />} alternate>
         {content.skills}
       </ContentSection>
 
       {/* What am I working on these days? */}
-      <ContentSection id="current" title="What am I working on these days?" icon={<Rocket className="w-6 h-6" />}>
+      <ContentSection id="current" title="What am I working on these days?" icon={isPersonalMode ? <Coffee className="w-6 h-6" /> : <Rocket className="w-6 h-6" />}>
         {content.current}
       </ContentSection>
 
