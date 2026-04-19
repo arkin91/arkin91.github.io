@@ -96,44 +96,44 @@
     --sidebar-ring: 0 72% 55%;
   }
 
-  /* Personal Mode - Relaxed beige, sky blue, white theme */
+  /* Personal Mode - Warm off-white with muted coral-red accent */
   .personal-mode {
-    /* Solid beige background */
-    --background: 39 50% 90%;
-    --foreground: 45 10% 15%;
+    /* Warm off-white background */
+    --background: 30 20% 97%;
+    --foreground: 0 0% 18%;
 
-    --card: 39 40% 95%;
-    --card-foreground: 45 10% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 18%;
 
-    --popover: 39 40% 95%;
-    --popover-foreground: 45 10% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 18%;
 
-    /* Sky blue accent */
-    --primary: 199 89% 48%;
+    /* Muted coral-red accent */
+    --primary: 5 65% 58%;
     --primary-foreground: 0 0% 100%;
 
-    /* Warm beige backgrounds */
-    --secondary: 39 35% 85%;
-    --secondary-foreground: 45 10% 20%;
+    /* Warm neutral backgrounds */
+    --secondary: 25 15% 93%;
+    --secondary-foreground: 0 0% 18%;
 
-    --muted: 39 30% 80%;
-    --muted-foreground: 45 10% 40%;
+    --muted: 25 10% 88%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 199 89% 48%;
+    --accent: 5 65% 58%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 39 25% 80%;
-    --input: 39 25% 80%;
-    --ring: 199 89% 48%;
+    --border: 25 12% 88%;
+    --input: 25 12% 88%;
+    --ring: 5 65% 58%;
 
-    /* Personal mode hero - light relaxed blue */
-    --hero-gradient: hsl(199 70% 90%);
-    --card-shadow: 0 4px 20px -4px hsl(39 30% 50% / 0.15);
-    --card-shadow-hover: 0 12px 40px -8px hsl(39 30% 50% / 0.25);
-    --text-gradient: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(199 89% 35%) 100%);
+    /* Personal mode hero - soft warm dark grey */
+    --hero-gradient: linear-gradient(135deg, hsl(20 8% 22%) 0%, hsl(20 8% 16%) 50%, hsl(20 8% 14%) 100%);
+    --card-shadow: 0 4px 20px -4px hsl(20 10% 30% / 0.10);
+    --card-shadow-hover: 0 12px 40px -8px hsl(20 10% 30% / 0.18);
+    --text-gradient: linear-gradient(135deg, hsl(5 65% 58%) 0%, hsl(5 65% 45%) 100%);
   }
 }
 
