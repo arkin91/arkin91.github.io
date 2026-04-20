@@ -13,49 +13,37 @@ const Index = () => {
   // Professional content
   const professionalContent = {
     hero: {
-      title: "MBA Candidate | Aspiring Product Manager",
-      summary: "Passionate about building products that solve real problems. Currently pursuing my MBA and seeking PM internship opportunities to drive impact at scale."
+      title: "MBA Candidate @ CMU Tepper | Aspiring Product Manager",
+      summary: "Passionate about tackling tough problems that create win-win situations – delivering positive social impact for the world and supporting a sustainable business"
     },
     whoAmI: <>
-        <p className="mb-4">
-          I'm a driven individual with a passion for technology and business strategy. 
-          My background spans [your previous industry/experience], where I developed a 
-          keen eye for identifying user pain points and translating them into product opportunities.
-        </p>
         <p>
-          Beyond work, I'm an avid [your hobbies/interests], which keeps me curious and 
-          constantly learning. I believe the best products come from diverse perspectives 
-          and genuine empathy for users.
+          I'm a driven, passionate engineer with a background working at the intersection of technology and business. My background is electrical engineering and technology consulting at Accenture Strategy and Consulting, where I have helped plan, evaluate and deliver patent-pending features and led GTM initiatives.
         </p>
       </>,
     goal: <>
         <p className="mb-4">
-          My immediate goal is to secure a PM internship where I can apply my 
-          analytical skills and business acumen to real product challenges. I'm 
-          particularly excited about opportunities in [your areas of interest: fintech, 
-          healthtech, B2B SaaS, etc.].
+          My goal is to build. I want to capitalize on this inflection point in the way we work to understand how to plan, evaluate and deliver products and features end-to-end, on my own. I'm particularly excited about B2B opportunities in frontier labs, clean-tech and energy industries.
         </p>
         <p>
-          Long-term, I aspire to lead product teams that create meaningful impact—whether 
-          that's improving financial inclusion, advancing healthcare accessibility, or 
-          reimagining how people work and collaborate.
+          Long term, I aspire to accumulate the knowledge and network to build my own thing – something at the intersection of clean tech and policy.
         </p>
       </>,
     journey: <div className="space-y-6">
         <div className="border-l-2 border-primary pl-6">
-          <h4 className="font-semibold text-foreground mb-1">Current: MBA Program</h4>
-          <p className="text-sm text-muted-foreground mb-2">[Your School Name] • 2024 - Present</p>
-          <p>Focusing on product management, strategy, and entrepreneurship. Leading [relevant activities/clubs].</p>
+          <h4 className="font-semibold text-foreground mb-1">Current: Full-time MBA Student</h4>
+          <p className="text-sm text-muted-foreground mb-2">CMU Tepper School of Business • 2025 - Present</p>
+          <p>Focusing on Product Management, Business Strategy and Sustainability.</p>
         </div>
         <div className="border-l-2 border-border pl-6">
-          <h4 className="font-semibold text-foreground mb-1">Previous Role</h4>
-          <p className="text-sm text-muted-foreground mb-2">[Company Name] • [Years]</p>
-          <p>Describe your key achievements and what you learned that's relevant to PM.</p>
+          <h4 className="font-semibold text-foreground mb-1">Management Consulting Associate</h4>
+          <p className="text-sm text-muted-foreground mb-2">Accenture Strategy & Consulting • 2022 - 2025</p>
+          <p>Worked with global clients on B2B products spanning Public Sector, Telecom and Sustainable Product domains. Delivered patent-pending product features and captured additional accounts generating ~$4M in top line impact.</p>
         </div>
         <div className="border-l-2 border-border pl-6">
-          <h4 className="font-semibold text-foreground mb-1">Earlier Experience</h4>
-          <p className="text-sm text-muted-foreground mb-2">[Company/School Name] • [Years]</p>
-          <p>Foundation experiences that shaped your interest in product management.</p>
+          <h4 className="font-semibold text-foreground mb-1">Bachelor of Engineering – Electrical and Electronics Engineering</h4>
+          <p className="text-sm text-muted-foreground mb-2">BITS Pilani • 2018 - 2022</p>
+          <p>Undertook projects in Convolutional Neural Networks, Computer Vision and Supercapacitors that reinforced interest in tech-focused solutions. Volunteer work in health and public awareness initiatives, combined with debating experience, made me inclined towards sustainability and social impact.</p>
         </div>
       </div>,
     skills: <div className="grid md:grid-cols-2 gap-6">
@@ -64,15 +52,15 @@ const Index = () => {
           <ul className="space-y-2">
             <li className="flex items-center gap-2">
               <span className="w-2 h-2 bg-primary rounded-full" />
-              Data Analysis & SQL
+              Tableau, SQL
             </li>
             <li className="flex items-center gap-2">
               <span className="w-2 h-2 bg-primary rounded-full" />
-              Product Analytics (Amplitude, Mixpanel)
+              A/B Testing
             </li>
             <li className="flex items-center gap-2">
               <span className="w-2 h-2 bg-primary rounded-full" />
-              Prototyping (Figma)
+              Figma, Lovable, Claude
             </li>
           </ul>
         </div>
@@ -101,11 +89,11 @@ const Index = () => {
         </div>
         <div className="p-4 bg-secondary rounded-lg">
           <h4 className="font-semibold text-foreground mb-2">📚 Course Projects</h4>
-          <p>Working on [specific MBA project] that involves [relevant skills].</p>
+          <p>Creating an NAV model for financing Sustainable Aviation Fuels – requires market research on costs and revenue uptake.</p>
         </div>
         <div className="p-4 bg-secondary rounded-lg">
           <h4 className="font-semibold text-foreground mb-2">🛠️ Side Projects</h4>
-          <p>Building [your side project] to explore [technology/problem space].</p>
+          <p>Creating a personal relationship manager, to explore Claude Code and to help students like me structure their networking outreach.</p>
         </div>
       </div>
   };
@@ -113,38 +101,32 @@ const Index = () => {
   // Personal content
   const personalContent = {
     hero: {
-      title: "Fantasy Fiction Fanatic | Aspiring Cook & Traveller",
-      summary: "When I'm not in MBA mode, you'll find me lost in epic fantasy worlds, experimenting with recipes in the kitchen, or planning my next adventure to far-flung destinations."
+      title: "I like consuming knowledge and talking about it",
+      summary: "When I'm not in MBA mode, you'll find me lost in epic fantasy worlds, experimenting with recipes in the kitchen, or exploring my latest hobby – these days it's hitting the gym!"
     },
     whoAmI: <>
         <p className="mb-4">
-          I'm a passionate reader who devours fantasy fiction—from sprawling epic sagas to 
-          intricate magic systems. There's something magical about escaping into worlds where 
-          anything is possible.
+          I'm a passionate reader who devours fantasy fiction – from sprawling epic sagas to intricate magic systems. There's something fascinating about creating and inhabiting worlds with a different set of physical laws.
         </p>
         <p className="mb-4">
-          In the kitchen, I'm an enthusiastic home cook who loves experimenting with cuisines 
-          from around the world. Italian and Indian cuisines hold a special place in my heart, 
-          and I'm on a mission to master the art of authentic Neapolitan pizza.
+          In the kitchen, I'm an enthusiastic home cook who loves experimenting with cuisines from around the world. Italian and Indian cuisines hold a special place in my heart, and I'm on a mission to master the art of authentic Neapolitan pizza.
         </p>
         <p>
-          Travel fuels my soul—I'm drawn to dramatic landscapes, rich cultures, and experiences 
-          that push me out of my comfort zone. My bucket list is long, and I'm slowly but surely 
-          checking items off!
+          I love travelling, especially the mountains. However, given that that is on a backburner for now, I spend my free time staying active. These days, it's the gym and squash.
         </p>
       </>,
     goal: <div className="space-y-4">
         <div className="p-4 bg-secondary rounded-lg">
           <h4 className="font-semibold text-foreground mb-2">🍕 Culinary Quest</h4>
-          <p>Master the art of making a truly authentic Neapolitan pizza—leopard-spotted crust, San Marzano tomatoes, fresh mozzarella, and all.</p>
+          <p>Master the art of making a truly authentic Neapolitan pizza – leopard-spotted crust, San Marzano tomatoes, fresh mozzarella, and all.</p>
         </div>
         <div className="p-4 bg-secondary rounded-lg">
           <h4 className="font-semibold text-foreground mb-2">🏔️ Travel Dreams</h4>
-          <p>Hike through the stunning glaciers of Patagonia and witness the Northern Lights dancing over Iceland's dramatic landscapes.</p>
+          <p>Hike through the Patagonias and behold the volcanic landscapes of Iceland.</p>
         </div>
         <div className="p-4 bg-secondary rounded-lg">
           <h4 className="font-semibold text-foreground mb-2">✍️ Creative Ambition</h4>
-          <p>Write my own fantasy fiction series—a story that's been brewing in my imagination for years, waiting to be told.</p>
+          <p>Write my own fantasy fiction series – a story that's been brewing in my imagination for years, waiting to be told.</p>
         </div>
       </div>,
     journey: <div className="space-y-6">
@@ -153,7 +135,7 @@ const Index = () => {
           <div className="flex flex-col justify-center">
             <h4 className="font-semibold text-foreground mb-1">🎿 Mountain Adventure</h4>
             <p className="text-sm text-muted-foreground mb-2">Recent</p>
-            <p>Conquered my fear of heights with an exhilarating skiing trip in the Alps—crashed spectacularly, got back up, and loved every minute.</p>
+            <p>White water rafting down the Ohiopyle River – care to guess how many times I went overboard?</p>
           </div>
         </div>
         <div className="flex gap-4 border-l-2 border-border pl-6">
@@ -161,7 +143,7 @@ const Index = () => {
           <div className="flex flex-col justify-center">
             <h4 className="font-semibold text-foreground mb-1">🍜 Culinary Experiment</h4>
             <p className="text-sm text-muted-foreground mb-2">Last Month</p>
-            <p>Successfully made hand-pulled noodles from scratch after watching about 50 YouTube tutorials and destroying my kitchen twice.</p>
+            <p>Successfully burned spaghetti pasta. It's a skill, I know.</p>
           </div>
         </div>
         <div className="flex gap-4 border-l-2 border-border pl-6">
@@ -169,7 +151,7 @@ const Index = () => {
           <div className="flex flex-col justify-center">
             <h4 className="font-semibold text-foreground mb-1">📖 Reading Marathon</h4>
             <p className="text-sm text-muted-foreground mb-2">Ongoing</p>
-            <p>Finished the entire Cosmere series by Brandon Sanderson—that's over 4 million words of interconnected epic fantasy!</p>
+            <p>Just wrapped up all books in the Witcher Saga. Quite happy to talk about my thoughts on the characters, the dialogue and the world building!</p>
           </div>
         </div>
       </div>,
@@ -199,15 +181,15 @@ const Index = () => {
     current: <div className="space-y-4">
         <div className="p-4 bg-secondary rounded-lg">
           <h4 className="font-semibold text-foreground mb-2">📚 Currently Reading</h4>
-          <p>Deep into "The Stormlight Archive" by Brandon Sanderson—Book 4: Rhythm of War. The magic system is absolutely mind-blowing!</p>
+          <p>Planning on starting with Terry Pratchett's Discworld series.</p>
         </div>
         <div className="p-4 bg-secondary rounded-lg">
           <h4 className="font-semibold text-foreground mb-2">🤖 Fun AI Exploration</h4>
-          <p>Building a personal AI assistant that helps me organize my fantasy book collection and recommends what to read next based on my mood.</p>
+          <p>Apart from the PRM project, working on creating dashboards that ingest information from multiple projects/initiatives and provide concise alerts for PMs and PMMs.</p>
         </div>
         <div className="p-4 bg-secondary rounded-lg">
           <h4 className="font-semibold text-foreground mb-2">💪 Fitness Goal</h4>
-          <p>Training to do 10 pull-ups in one go—currently at 6, so we're getting there! Three sets of pull-ups every other day is the plan.</p>
+          <p>Training to do 10 pull-ups in one go—currently at 5, so we're getting there! Three sets of pull-ups every other day is the plan.</p>
         </div>
       </div>
   };
@@ -249,11 +231,11 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center">
           <p className="mb-4 text-slate-400">Let's connect and explore opportunities together.</p>
           <div className="flex justify-center gap-6">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 font-medium transition-colors">
+            <a href="https://linkedin.com/in/arkin-sanghi" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 font-medium transition-colors">
               LinkedIn
             </a>
-            <a href="mailto:your.email@example.com" className="text-primary hover:text-primary/80 font-medium transition-colors">
-              Email
+            <a href="mailto:Sanghi.arkin@gmail.com" className="text-primary hover:text-primary/80 font-medium transition-colors">
+              Sanghi.arkin@gmail.com
             </a>
           </div>
           <p className="text-sm mt-8 text-slate-400">© 2026 Arkin Sanghi. All rights reserved.</p>
